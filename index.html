@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Number Guess Game</title>
+</head>
+<body>
+	<h1>Number Guessing Game</h1>
+	<h3>The computer has chosen a number between 1 and 100. See if you can guess the correct number</h3>
+	<h4><b> NOTE: You only get 3 tries!! After the 3rd try, we will reveal the correct answer.</b></h4>
+
+	<button type="button" id="start" class="start-btn" onclick="start()">Start the game.</button>
+	<button type="button" id="reset" class="reset-btn" onclick="restart()">Restart</button>
+
+	<div id="main-div" class="main-div">
+		Enter the guess -> <input type="text" id="guess-box">
+		<button type="button" id="check" class="check-btn" onclick="checkGuess()">Check</button>
+
+		<div id="all-guesses">Your guess: </div>
+		<div id="high-or-low"></div>
+	</div>
+
+	
+	<script src="project.js" type="text/javascript"></script>
+</body>
+</html>
